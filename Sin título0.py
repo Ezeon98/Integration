@@ -1,6 +1,7 @@
 import gluestick as gs
 #import pandas as pd
 #import os
+#import ast ###Pull request##
 #import ast ###Prueba pull request###
 #import locale
 
@@ -17,7 +18,7 @@ for key in input_data:
     
  #Selecciono Campos
 invoices = input_df[['id', 'customer_name', 'customer_email', 'amount_remaining', 'number']]
- #Renombro Campos y Quito los duplicados
+ #Renombro Campos y Quito los duplicaos
 invoices = invoices.pipe(lambda x: x.rename(columns={'customer_name': 'Nombre', 'customer_email': 'Mail', 
                                                      'amount_remaining' : 'Monto_Pendiente', 'number': 'Numero_Factura'})).drop_duplicates()
 #invoices.astype({"Monto_Pendiente" : float})
