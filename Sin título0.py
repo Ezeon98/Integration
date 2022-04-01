@@ -1,7 +1,11 @@
 import gluestick as gs
 #import pandas as pd
 #import os
+<<<<<<< Updated upstream
 #import ast ###Pull request##
+=======
+#import ast ###Prueba pull request###asdasdsada
+>>>>>>> Stashed changes
 #import locale
 
 ROOT_DIR = os.environ.get("ROOT_DIR", ".")
